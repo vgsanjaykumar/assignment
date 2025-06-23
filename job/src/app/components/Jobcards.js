@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function JobCard({ company, role, icon, onApply }) {
     return (
-        <div className="bg-white rounded-2xl shadow-md p-5 w-full sm:w-[48%] lg:w-[23%] hover:shadow-lg transition duration-300">
-            {/* Logo + Time */}
+        <div className="bg-white rounded-[12px] shadow-md p-5 w-full sm:w-[48%] lg:w-[315px] lg:h-[360px] hover:shadow-lg transition duration-300">
+      
             <div className="flex items-center justify-between">
                 <div className="relative h-[83.46px] w-[82px]">
                     <Image
@@ -44,8 +44,7 @@ export default function JobCard({ company, role, icon, onApply }) {
            
             <button
                 onClick={onApply}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white mt-4 py-2 rounded-xl text-sm font-medium"
-            >
+                className="w-full bg-blue-500 hover:bg-blue-600 text-white mt-4 py-2 rounded-xl text-sm font-medium">
                 Apply Now
             </button>
         </div>
