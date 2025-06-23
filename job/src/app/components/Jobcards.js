@@ -20,7 +20,7 @@ export default function JobCard({ company, role, icon, onApply }) {
                 </span>
             </div>
 
-            <h3 className="text-lg font-semibold mt-4">{role}</h3>
+            <h3 className="text-lg font-semibold mt-4 text-gray-900">{role}</h3>
 
            
             <p className="text-[16px] text-gray-600 flex flex-wrap items-center gap-2 mt-2">
