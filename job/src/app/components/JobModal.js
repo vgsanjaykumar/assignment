@@ -15,7 +15,6 @@ export default function JobModal({ onClose }) {
     const [deadline, setDeadline] = useState("");
     const [description, setDescription] = useState("");
 
-    // Lock scroll when modal is open
     useEffect(() => {
         document.body.style.overflow = "hidden";
         return () => { document.body.style.overflow = "auto"; };
@@ -27,9 +26,9 @@ export default function JobModal({ onClose }) {
         <div className="fixed inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm z-50">
             <div className="bg-white rounded-2xl shadow-2xl px-8 py-6 w-full max-w-3xl relative">
                 <button onClick={onClose} className="absolute top-3 right-4 text-gray-500 hover:text-gray-700 text-xl">✕</button>
-                <h2 className="text-xl font-semibold text-center mb-6 text-gray-900">Create Job Opening</h2>
+                <h2 className="text-[24px]  text-center mb-6 text-[#222222] font-[700]">Create Job Opening</h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-800">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4  text-black font-[600]">
                     <InputWithIcon label="Job Title"  value={jobTitle} onChange={setJobTitle} placeholder="Full Stack Developer" />
                     <InputWithIcon label="Company Name" icon={<MdBusiness />} value={companyName} onChange={setCompanyName} placeholder="Amazon, Microsoft, Swiggy" />
                     <DropdownWithIcon label="Location" icon={<MdLocationOn />} value={location} onChange={setLocation} options={["Bangalore", "Chennai", "Remote"]} />
@@ -59,10 +58,10 @@ export default function JobModal({ onClose }) {
                 </div>
 
                 <div className="flex justify-between items-center mt-6">
-                    <button className="border border-gray-400 rounded-lg px-5 py-2 text-gray-700 hover:bg-gray-100 flex items-center text-sm font-medium">
+                    <button className="border border-gray-400 rounded-lg px-5 py-2 text-gray-700 hover:bg-gray-100 flex items-center text-[18px] font-[600]">
                         Save Draft <FaAngleDoubleDown className="ml-2" />
                     </button>
-                    <button className="bg-blue-500 text-white rounded-lg px-6 py-2 hover:bg-blue-600 flex items-center text-sm font-semibold shadow-md">
+                    <button className="bg-blue-500 text-white rounded-lg px-6 py-2 hover:bg-blue-600 flex items-center text-[18px] font-[600] shadow-md">
                         Publish <FaAngleDoubleRight className="ml-2" />
                     </button>
                 </div>

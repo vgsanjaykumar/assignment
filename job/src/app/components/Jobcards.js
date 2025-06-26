@@ -15,28 +15,28 @@ export default function JobCard({ company, role, icon, onApply }) {
                         className="rounded"
                     />
                 </div>
-                <span className="text-xs font-medium bg-blue-100 text-gray-800 px-2 py-1 rounded-full">
+                <span className="text-xs font-[500] bg-blue-100 text-gray-800 px-2 py-1 rounded-full">
                     24h Ago
                 </span>
             </div>
 
-            <h3 className="text-lg font-semibold mt-4 text-gray-900">{role}</h3>
+            <h3 className="text-[20px] font-[700]  mt-4 text-black">{role}</h3>
 
            
-            <p className="text-[16px] text-gray-600 flex flex-wrap items-center gap-2 mt-2">
+            <p className="text-[16px] text-[#5A5A5A] flex flex-wrap items-center gap-2 mt-2">
                 <span className="flex items-center gap-1">
-                    <FaUser className="text-gray-500" /> 1-3 yr Exp
+                    <FaUser className="text-[#5A5A5A]" /> 1-3 yr Exp
                 </span>
                 <span className="flex items-center gap-1">
-                    <FaBuilding className="text-gray-500" /> Onsite
+                    <FaBuilding className="text-[#5A5A5A]" /> Onsite
                 </span>
                 <span className="flex items-center gap-1">
-                    <FaMoneyBillWave className="text-gray-500" /> 12 LPA
+                    <FaMoneyBillWave className="text-[#5A5A5A]" /> 12 LPA
                 </span>
             </p>
 
             
-            <ul className="text-[14px] text-gray-500 mt-3 space-y-1 leading-relaxed">
+            <ul className="text-[14px] text-gray-500 mt-3 space-y-1 leading-relaxed font-[500]">
                 <li>• A user-friendly interface lets you browse stunning photos and videos</li>
                 <li>• Filter destinations based on interests and travel style</li>
             </ul>
@@ -44,7 +44,7 @@ export default function JobCard({ company, role, icon, onApply }) {
            
             <button
                 onClick={onApply}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white mt-4 py-2 rounded-xl text-sm font-medium">
+                className="w-full bg-blue-500 hover:bg-blue-600 text-white mt-4 py-2 rounded-xl text-sm font-[700]">
                 Apply Now
             </button>
         </div>

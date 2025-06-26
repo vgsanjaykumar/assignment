@@ -11,7 +11,7 @@ export default function Navbar() {
             </div>
 
 
-            <ul className="hidden md:flex items-center space-x-8 text-gray-800 font-medium">
+            <ul className="hidden md:flex items-center space-x-8 text-[#303030] font-[600]">
                 <li className="hover:text-purple-600 cursor-pointer">Home</li>
                 <li className="hover:text-purple-600 cursor-pointer">Find Jobs</li>
                 <li className="hover:text-purple-600 cursor-pointer">Find Talents</li>

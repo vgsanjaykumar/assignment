@@ -22,5 +22,58 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/font/Satoshi/Fonts/TTF/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 100 900 500 600 700;
+  /* Variable range */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/font/Satoshi/Fonts/TTF/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 100 900 500 600 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #000204;
+  /* Tailwind's gray-200 */
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+  /* aligns thumb with track */
+  position: relative;
+  z-index: 10;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
 }
