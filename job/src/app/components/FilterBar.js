@@ -6,7 +6,7 @@ export default function FilterBar() {
     const [maxSalary, setMaxSalary] = useState(80000);
 
     return (
-        <div className="flex flex-wrap items-center justify-between gap-6 px-6 md:px-24 py-4 bg-white shadow rounded-xl mt-4 font-satoshi text-[#686868]">
+        <div className="flex flex-wrap items-center justify-between gap-6 px-6 md:px-24 py-4  rounded-xl mt-4 font-satoshi text-[#686868] ">
 
             {/* Search Input */}
             <div className="flex items-center border-r border-gray-300 pr-4 w-full md:w-64 font-semibold">
