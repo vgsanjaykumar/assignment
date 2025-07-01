@@ -9,7 +9,7 @@ export default function JobModal({ onClose }) {
     const [jobTitle, setJobTitle] = useState("");
     const [companyName, setCompanyName] = useState("");
     const [location, setLocation] = useState("");
-    const [jobType, setJobType] = useState("FullTime");
+    const [jobType, setJobType] = useState("");
     const [salaryFrom, setSalaryFrom] = useState("");
     const [salaryTo, setSalaryTo] = useState("");
     const [deadline, setDeadline] = useState("");
