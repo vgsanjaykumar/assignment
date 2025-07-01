@@ -23,7 +23,7 @@ export default function Home() {
 
     return (
         <div className="bg-[#f9fafb] min-h-screen w-full">
-            <div className="h-[214px] bg-white shadow">
+            <div className="h-[180px] bg-white shadow mb-5 ">
                 <Navbar />
                 <FilterBar />
             </div>
